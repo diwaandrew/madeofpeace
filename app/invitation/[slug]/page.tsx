@@ -153,7 +153,7 @@ export default function Invitation() {
           </div>
         </section>
         <section className="dark-section" id="tanggal">
-          <div className="container">
+          <div className="">
             <div className="text-center">
               <h1 className="font-sacramento my-4 text-4xl md:text-8xl py-3">
                 Waktu Menuju Acara
@@ -300,14 +300,14 @@ export default function Invitation() {
             </p>
 
             <h1
-              className="text-center font-sacramento my-4 text-4xl md:text-8xl py-3"
+              className="text-center font-sacramento my-4 text-2xl md:text-3xl py-3"
               data-aos="fade-up"
               data-aos-duration="2000"
             >
               Wassalamualaikum Warahmatullahi Wabarakatuh
             </h1>
             <h1
-              className="font-arabic text-4xl md:text-8xl py-4 px-2"
+              className="font-arabic text-2xl md:text-4xl py-4 px-2"
               data-aos="fade-up"
               data-aos-duration="2000"
             >
