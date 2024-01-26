@@ -1,4 +1,23 @@
+/* eslint-disable @next/next/no-img-element */
+"use client"
+import { useEffect, useState } from "react";
+
  const Guest = () => {
+    const [progressInfoVisible, setProgressInfoVisible] = useState(true);
+
+    // useEffect to run the logic when the component mounts
+    useEffect(() => {
+      // Your logic to handle progress info visibility
+      // For example, you might want to show it for a few seconds and then hide it
+      const timeoutId = setTimeout(() => {
+        setProgressInfoVisible(false);
+      }, 5000); // Hide after 5 seconds
+  
+      // Cleanup the timeout to avoid memory leaks
+      return () => clearTimeout(timeoutId);
+    }, []); // Empty dependency array means it runs once when the component mounts
+
+    
     return(
         <body data-email="user@example.com" data-password="12345678" data-url="https://api.ulems.my.id/" style={{overflowY:"hidden"}}>
 
@@ -46,7 +65,7 @@
 
                 <div className="py-4">
                     <div className="img-crop border border-3 border-light shadow mx-auto">
-                        <img src="./assets/images/bg.jpeg" alt="bg" />
+                        {/* <img src="/bg.jpeg" width="100%" alt="bg" /> */}
                     </div>
                 </div>
 
@@ -115,7 +134,7 @@
             <div className="text-center" data-aos="fade-up" data-aos-duration="2000">
 
                 <h1 className="font-esthetic mt-0 mb-3" >
-                    Allah Subhanahu Wa Ta'ala berfirman
+                    Allah Subhanahu Wa Ta`ala berfirman
                 </h1>
 
                 <p  className="px-2">
@@ -158,7 +177,7 @@
                     </div>
 
                     <p style={{fontSize: 0.9}} className="mt-4 py-2">
-                        Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, insyaAllah kami akan menyelenggarakan
+                        Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta`ala, insyaAllah kami akan menyelenggarakan
                         acara :
                     </p>
 
@@ -365,7 +384,7 @@
 
                 <p style={{fontSize: 0.7}} className="pt-2 pb-1 px-2" data-aos="fade-up" data-aos-duration="1500">
                     Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i.
-                    berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih.
+                    berkenan hadir untuk memberikan doa restunya kami ucapkan terimakasih.
                 </p>
 
                 <h1 className="font-esthetic" data-aos="fade-up" data-aos-duration="2000">Wassalamualaikum Warahmatullahi Wabarakatuh</h1>
@@ -409,9 +428,6 @@
                 </div>
                 <small className="mt-1 text-light" id="progress-info" >Loading asset</small>
 
-                <script>
-                    document.getElementById('progress-info').style.display = 'block';
-                </script>
                 <noscript>
                     <small className="mt-1 text-danger">Maaf, undangan ini perlu javascript</small>
                 </noscript>

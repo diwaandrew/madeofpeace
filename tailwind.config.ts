@@ -15,10 +15,8 @@ const config: Config = {
       },
 
       fontFamily: {
-        sacramento: ['Sacramento', 'cursive'],
+        sacramento: ['"Sacramento"', 'cursive'],
       },
-
-
     },
   },
   plugins: [],
