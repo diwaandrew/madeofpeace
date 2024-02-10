@@ -78,4 +78,263 @@ body {
   }
 
   
+  
+  .timeline {
+    list-style: none;
+    padding: 20px 0;
+    position: relative
+}
+
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 1px;
+    background-color: #d4d4d4;
+    left: 50%;
+    margin-left: 0
+}
+
+@media screen and (max-width: 480px) {
+    .timeline:before {
+        margin-left:-64px
+    }
+}
+
+.timeline>li {
+    margin-bottom: 20px;
+    position: relative
+}
+
+.timeline>li:after,.timeline>li:before {
+    content: " ";
+    display: table;
+}
+
+.timeline>li:after {
+    clear: both
+}
+
+.timeline>li>.timeline-panel {
+    width: 40%;
+    float: left;
+    border: 1px solid #d4d4d4;
+    padding: 30px;
+    position: relative;
+    border-radius: 4px
+}
+
+.timeline>li>.timeline-panel:before {
+    position: absolute;
+    top: 80px;
+    right: -15px;
+    display: inline-block;
+    border-color: transparent #ccc;
+    border-style: solid;
+    border-width: 15px 0 15px 15px;
+    content: " "
+}
+
+.timeline>li>.timeline-panel:after {
+    position: absolute;
+    top: 81px;
+    right: -14px;
+    display: inline-block;
+    border-color: transparent #fff;
+    border-style: solid;
+    border-width: 14px 0 14px 14px;
+    content: " "
+}
+
+@media screen and (max-width: 480px) {
+    .timeline>li>.timeline-panel {
+        width:75%!important
+    }
+
+    .timeline>li>.timeline-panel:before {
+        top: 30px
+    }
+
+    .timeline>li>.timeline-panel:after {
+        top: 31px
+    }
+}
+
+.timeline>li>.timeline-badge {
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+    width: 160px;
+    height: 160px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -80px;
+    background-color: #999;
+    z-index: 100;
+    border-radius: 50%
+}
+
+@media screen and (max-width: 480px) {
+    .timeline>li>.timeline-badge {
+        width:60px;
+        height: 60px;
+        margin-left: -20px!important
+    }
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto
+}
+
+.timeline-title {
+    margin-top: 0
+}
+
+.date {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+.timeline-body>p,.timeline-body>ul {
+    margin-bottom: 0
+}
+
+.timeline-body>p+p {
+    margin-top: 5px
+}
+
+@media (max-width: 992px) {
+    ul.timeline:before {
+        left:90px
+    }
+
+    ul.timeline>li>.timeline-panel {
+        width: calc(100% - 200px);
+        width: -webkit-calc(100% - 200px)
+    }
+
+    ul.timeline>li>.timeline-badge {
+        left: 15px;
+        margin-left: 0;
+        top: 16px
+    }
+
+    ul.timeline>li>.timeline-panel {
+        float: right
+    }
+
+    ul.timeline>li>.timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto
+    }
+
+    ul.timeline>li>.timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto
+    }
+}
+
+/* Add more classes for other background images as needed */
+
+/* Example for adding more classes */
+.background-first-meeting {
+  background-image: url('/thekusuma/static/p-first-meeting.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .timeline-badge {
+    height: 75px;
+    width: 75px;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  opacity: 0;
+  animation-name: fadeInDown;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-left {
+  opacity: 0;
+  animation-name: fadeLeft;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-right {
+  opacity: 0;
+  animation-name: fadeRight;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+
+
 }
