@@ -104,21 +104,20 @@ const Main = ({ className }: any) => {
 
           <div className="col-md-12 col-md-offset-0">
             <ul className="timeline animate-box">
-              <li className="jumpa-pertama">
+            <li>
+                <div
+                  className="timeline-badge"
+                  style={{ backgroundImage: "url('/cowo.png')" }}
+                ></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h3 className="timeline-title">Jumpa Pertama </h3>
-                    <span className="date">10 Oktober 2015</span>
+                    <h3 className="timeline-title">Cerita Awal</h3>
+                    <span className="date">2018</span>
                   </div>
                   <div className="timeline-body">
                     <p>
-                      Pertama kali kami dipertemukan di sebuah acara malam
-                      keakraban di kampus Universitas Dian Nuswantoro. Sebagai
-                      seorang mahasiswa baru, kala itu Dinda melihat Indra
-                      sedang sibuk memegang megaphone (toa) di tengah hiruk
-                      pikuk acara. Belum ada sesuatu yang spesial, kala itu
-                      justru Dinda melihat Indra banyak menerima surat pink
-                      (tanda kagum) dari teman sesama mahasiswa barunya.
+                    Katanya, pertemuan pertama dengan orang baru selalu tidak terduga. 
+                    Ya, itu juga terjadi pada kami. Melalui sebuah pertemuan kecil dan singkat itu, ternyata perkenalan itu berlanjut.
                     </p>
                   </div>
                 </div>
@@ -131,18 +130,12 @@ const Main = ({ className }: any) => {
                 <div className="timeline-panel">
                   <div className="timeline-heading">
                     <h3 className="timeline-title">Kembali Berjumpa</h3>
-                    <span className="date">9 September 2017</span>
+                    <span className="date">2019</span>
                   </div>
                   <div className="timeline-body">
                     <p>
-                      Konferensi Future Leader Summit 2017 kembali mempertemukan
-                      mereka. Dinda sebagai peserta dan Indra sebagai panitia
-                      acara. Mulai dari saling sapa, mereka berdua tumbuh
-                      perasaan saling ingin mengenal lebih dalam. Seusai acara,
-                      Indra memberanikan diri untuk membangun komunikasi dengan
-                      Dinda. Dari pesan singkat pertama yang dikirimnya, Indra
-                      dan Dinda mulai dekat dan menjadi lebih sering mengirim
-                      kabar.{" "}
+                    Selayaknya orang pdkt pada umumnya, kami juga melakukan hal yang sama. 
+                    Bedanya, setelah itu kami mengambil waktu sendiri karena kesibukan dan kehidupan masing-masing. {" "}
                     </p>
                   </div>
                 </div>
@@ -154,22 +147,13 @@ const Main = ({ className }: any) => {
                 ></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h3 className="timeline-title">Kisah Kasih di Kampus</h3>
-                    <span className="date">Oktober 2017 - 2018</span>
+                    <h3 className="timeline-title">Kisah Kasih</h3>
+                    <span className="date">2021</span>
                   </div>
                   <div className="timeline-body">
                     <p>
-                      Sebagai sepasang mahasiswa dan mahasiswi, Dinda dan Indra
-                      memilih untuk mengisi kisah kasih di kampusnya dengan
-                      mengikuti berbagai kompetisi bersama. Kala itu, Dinda
-                      adalah mahasiswi Ilmu Komunikasi dan Indra adalah
-                      mahasiswa Teknik Informatika. Merupakan kolaborasi yang
-                      pas jika mengikuti kompetisi teknologi, Indra berperan
-                      sebagai seorang programmer dan Dinda sebagai seorang
-                      content development. Dinda dan Indra pernah membuat
-                      aplikasi Ayo Toba (Aplikasi Pariwisata Danau Toba) yang
-                      diajukan dalam kompetisi IT FEST Universitas Sumatera
-                      Utara di awal tahun 2018.
+                    Tahun dimana tiba2 semua ada jalan untuk kembali bertemu 
+                    dan kali ini lebih intens untuk mengenal satu sama lain. 
                     </p>
                   </div>
                 </div>
@@ -181,66 +165,14 @@ const Main = ({ className }: any) => {
                 ></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h3 className="timeline-title">Jakarta &amp; Kroasia</h3>
-                    <span className="date">2018 - 2019</span>
+                    <h3 className="timeline-title">Langkah</h3>
+                    <span className="date">2024</span>
                   </div>
                   <div className="timeline-body">
                     <p>
-                      Tidak selalu bersama, perjuangan dimulai ketika Indra
-                      memutuskan untuk bekerja di Jakarta sebagai seorang
-                      Software Engineer di Tokopedia. Belum usai masa LDR, pada
-                      3 Oktober 2018, Dinda juga memutuskan untuk mengambil
-                      beasiswa di University of Split, Kroasia. Di bulan
-                      November 2018, Indra melangsungkan wisuda dan Dinda hanya
-                      bisa memberi virtual support melalui video call.{" "}
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div
-                  className="timeline-badge"
-                  style={{ backgroundImage: "url('/cowo.png')" }}
-                ></div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h3 className="timeline-title">Kembali ke Indonesia</h3>
-                    <span className="date">3 Maret 2019</span>
-                  </div>
-                  <div className="timeline-body">
-                    <p>
-                      Periode belajar di Kroasia telah selesai. Akhirnya Dinda
-                      kembali ke Indonesia! Ada tanggung jawab yang harus Dinda
-                      selesaikan seusai dari Kroasia, yakni harus menyelesaikan
-                      skripsi dan mencapai target untuk wisuda di bulan Agustus
-                      2019. Selain itu, kembalinya Dinda ke Indonesia menjadi
-                      momen yang tepat bagi Indra untuk menyampaikan niat ingin
-                      serius kepada orang tua Dinda. Hal itu disambut baik oleh
-                      kedua orang tua mereka dan sepakat akan melaksanakan acara
-                      Ndodok Lawang usai Dinda wisuda. Sebelum wisuda, Dinda
-                      sudah harus meniti karir di Jakarta sebagai seorang
-                      Content Analyst di Ruangguru.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li className="timeline-inverted">
-                <div
-                  className="timeline-badge"
-                  style={{ backgroundImage: "url('/cowo.png')" }}
-                ></div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h3 className="timeline-title">Ndodok Lawang</h3>
-                    <span className="date">31 Agustus 2019</span>
-                  </div>
-                  <div className="timeline-body">
-                    <p>
-                      Akhirnya tiba di masa Indra dan keluarga hadir ke rumah
-                      Dinda untuk menyampaikan niat baik. Mulai dari acara
-                      Ndodok Lawang ini, dilanjutkan dengan persiapan pernikahan
-                      yang insha Allah akan diselenggarakan pada tanggal 3
-                      Oktober 2020.
+                    Dimulai dari tahun ini dan tahun-tahun berikutnya, 
+                    kami berkomitmen untuk membersamai satu sama lain dalam susah, 
+                    senang dan nano nano kehidupan yang lain. Selamanya. Doain kita guysss{" "}
                     </p>
                   </div>
                 </div>
