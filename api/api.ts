@@ -26,7 +26,7 @@ export async function createMessage(name:any, attendance:any, message:any) {
   
       if (error) throw error;
       
-      console.log('Retrieved data:', data);
+      // console.log('Retrieved data:', data);
       return data;
     } catch (error:any) {
       console.error('Error retrieving data:', error.message);

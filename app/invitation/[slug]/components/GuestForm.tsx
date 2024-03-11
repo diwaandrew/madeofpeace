@@ -10,13 +10,18 @@ const GuestForm = () => {
     message: "",
   });
 
+  const fetchData = async () => {
+    const response = await fetch('/api/guest/get')
+    const data = await response.json();
+    setMessages(data);
+  }
+
   // Fetch messages on component mount
   useEffect(() => {
     (async () => {
-      const fetchedMessages: any = await getMessages();
-      setMessages(fetchedMessages);
+      fetchData()
     })();
-  }, []);
+  }, [messages]);
 
   // Handle change in input fields
   const handleChange = (e: any) => {
@@ -30,11 +35,23 @@ const GuestForm = () => {
   // Handle form submission
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-    await createMessage(formData.name, formData.attendance, formData.message);
-    // Optionally refetch messages after insertion
-    const fetchedMessages: any = await getMessages();
-    setMessages(fetchedMessages);
-  };
+    
+    try {
+        const response = await fetch('/api/guest/post', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name: formData.name, attendance: formData.attendance, message: formData.message })
+        });
+
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error(error);
+    }
+};
+
 
   return (
     <Fragment>
@@ -89,32 +106,32 @@ const GuestForm = () => {
       </form>
       <div className="w-full rounded-4 mt-4 mb-2" id="daftar-ucapan">
         <ol className="relative border-gray-200 dark:border-gray-400 ">
-            {
-                messages.map((message:any, index) => {
-                    return(
-<li className="" key={index}>
-            <div className="mb-4 items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600">
-              <div>
-                <div className="flex gap-2">
-                  <h2 className="font-bold text-md"> {message.name} </h2>
-                  <span className="bg-gray-100 text-gray-800 text-xs font-normal px-2.5 py-0.5 h-5 rounded dark:bg-gray-600 dark:text-gray-300">
-                    {message.attendance}
-                  </span>
-                </div>
-                <div>
-                  <p className="text-sm">{message.message}</p>
-                </div>
-              </div>
+          {
+            messages.map((message: any, index) => {
+              return (
+                <li className="" key={index}>
+                  <div className="mb-4 items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600">
+                    <div>
+                      <div className="flex gap-2">
+                        <h2 className="font-bold text-md"> {message.name} </h2>
+                        <span className="bg-gray-100 text-gray-800 text-xs font-normal px-2.5 py-0.5 h-5 rounded dark:bg-gray-600 dark:text-gray-300">
+                          {message.attendance === "1" ? "Hadir" : "Tidak Hadir"}
+                        </span>
+                      </div>
+                      <div>
+                        <p className="text-sm">{message.message}</p>
+                      </div>
+                    </div>
 
-              <time className="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0">
-                {message.created_at}
-              </time>
-            </div>
-          </li>
-                    )
-                })
-            }
-          
+                    <time className="mb-1 text-xs font-normal text-gray-400 sm:order-last sm:mb-0">
+                      {new Date(message.created_at).toISOString().slice(0, 10)}
+                    </time>
+                  </div>
+                </li>
+              )
+            })
+          }
+
         </ol>
       </div>
     </Fragment>
