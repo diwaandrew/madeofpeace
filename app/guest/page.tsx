@@ -5,6 +5,19 @@ import { useEffect, useState } from "react";
  const Guest = () => {
     const [progressInfoVisible, setProgressInfoVisible] = useState(true);
 
+
+    const saveData = async () => {
+        const response = await fetch('/api/guestStore', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name: "Lorenzo", email: "lo@lorenzozar.com" })
+          });
+          const data = await response.json();
+          console.log(data);
+    }
+
     // useEffect to run the logic when the component mounts
     useEffect(() => {
       // Your logic to handle progress info visibility
