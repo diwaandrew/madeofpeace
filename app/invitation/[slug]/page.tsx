@@ -1,19 +1,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 "use client";
-import dataGuest from "@/api/guest";
-import {
-  capitalizeEachWord,
-  convertToLower,
-  decodeAndReplace,
-} from "@/lib/library-function";
-import Image from "next/image";
-import { useParams } from "next/navigation";
 import { Fragment, useEffect, useState } from "react";
 import { MailSearch, MapPinned, MoreHorizontalIcon, Send } from "lucide-react";
-import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Countdown from "./components/CountDown";
-import Link from "next/link";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";

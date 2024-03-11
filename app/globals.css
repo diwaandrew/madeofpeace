@@ -34,9 +34,11 @@ body {
     text-wrap: balance;
   }
   .aurora {
-    background: linear-gradient(-45deg, #30336b, #0c2461, #130f40, #535c68); /* Add more colors if needed */
-    background-size: 400% 400%;
-    animation: aurora 15s infinite linear;
+    /* background: linear-gradient(-45deg, #30336b, #0c2461, #130f40, #535c68); Add more colors if needed */
+    /* background-size: 400% 400%; */
+    /* animation: aurora 15s infinite linear; */
+    background: url('https://png.pngtree.com/background/20230203/original/pngtree-greenery-natural-background-watercolor-and-gold-leaves-for-wedding-or-engagement-picture-image_2025620.jpg');
+    background-size: cover;
   }
 
   @keyframes aurora {
