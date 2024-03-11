@@ -21,7 +21,7 @@ const GuestForm = () => {
     (async () => {
       fetchData()
     })();
-  }, [messages]);
+  }, []);
 
   // Handle change in input fields
   const handleChange = (e: any) => {
@@ -46,8 +46,17 @@ const GuestForm = () => {
         });
 
         const data = await response.json();
-        console.log(data);
-    } catch (error) {
+        fetchData();
+        
+        // Reset form data
+        setFormData({
+            name: "",
+            attendance: "1",
+            message: ""
+        });
+
+
+      } catch (error) {
         console.error(error);
     }
 };
