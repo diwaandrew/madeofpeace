@@ -37,7 +37,7 @@ const Header = ({onClick, text}:any) => {
                   src="/wedding-rings.svg"
                 />{" "}
               </div>
-              <h1 className="font-sacramento mb-6 text-4xl text-white">The Wedding Of</h1>
+              <h1 className="font-sacramento mb-6 text-4xl">The Wedding Of</h1>
               <div className="relative flex place-items-center">
                 <Image
                   className="rounded-full shadow-md white"
@@ -49,11 +49,11 @@ const Header = ({onClick, text}:any) => {
                 />
               </div>
 
-              <h1 className="font-sacramento my-4 text-4xl md:text-8xl text-white">
+              <h1 className="font-sacramento my-4 text-4xl md:text-8xl">
                 Selvi & Diwa
               </h1>
 
-              <h2 className="text-white"> Dear {capitalizeEachWord(guestName)}</h2>
+              <h2> Dear {capitalizeEachWord(guestName)}</h2>
               <button
                 className="flex gap-2 px-4 py-2 my-4 rounded-md bg-gray-300 text-black"
                 onClick={() => openInvitationHandler()}
