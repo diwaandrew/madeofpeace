@@ -1,11 +1,19 @@
 const dataGuest = [
     {
         "id":1,
-        "name":"Husein Indra K"
+        "name":"Friends"
     },
     {
         "id":2,
-        "name":"Dimas P"
+        "name":"Husein Indra K"
+    },
+    {
+        "id":3,
+        "name":"Bank Sinarmas Tbk"
+    },
+    {
+        "id":4,
+        "name":"Team Sat Set"
     }
 ]
 

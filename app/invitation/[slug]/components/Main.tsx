@@ -3,6 +3,7 @@ import Link from "next/link";
 import Countdown from "./CountDown";
 import FadeInComponent from "./FadeInComponent";
 import GuestForm from "./GuestForm";
+import Music from "./Music";
 
 const Main = ({ className }: any) => {
   return (
@@ -107,7 +108,7 @@ const Main = ({ className }: any) => {
             <li>
                 <div
                   className="timeline-badge"
-                  style={{ backgroundImage: "url('/cowo.png')" }}
+                  style={{ backgroundImage: "url('/1.jpg')" }}
                 ></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
@@ -125,7 +126,7 @@ const Main = ({ className }: any) => {
               <li className="timeline-inverted">
                 <div
                   className="timeline-badge"
-                  style={{ backgroundImage: "url('/cowo.png')" }}
+                  style={{ backgroundImage: "url('/2.jpg')" }}
                 ></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
@@ -143,7 +144,7 @@ const Main = ({ className }: any) => {
               <li>
                 <div
                   className="timeline-badge"
-                  style={{ backgroundImage: "url('/cowo.png')" }}
+                  style={{ backgroundImage: "url('/3.jpg')" }}
                 ></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
@@ -161,7 +162,7 @@ const Main = ({ className }: any) => {
               <li className="timeline-inverted">
                 <div
                   className="timeline-badge"
-                  style={{ backgroundImage: "url('/cowo.png')" }}
+                  style={{ backgroundImage: "url('/4.jpg')" }}
                 ></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
@@ -248,6 +249,7 @@ const Main = ({ className }: any) => {
           </div>
         </div>
       </section>
+      <Music/>
     </main>
   );
 };
