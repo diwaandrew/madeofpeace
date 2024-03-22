@@ -91,6 +91,24 @@ const GuestForm = () => {
     setShowSuccessModal(false);
   };
 
+  const [currentPage, setCurrentPage] = useState(1); // State to track current page
+  const pageSize = 8; // Number of messages per page
+
+  // Pagination functions
+  const nextPage = () => {
+    setCurrentPage(currentPage + 1);
+  };
+
+  const prevPage = () => {
+    setCurrentPage(currentPage - 1);
+  };
+
+  // Calculate the range of messages to display based on current page
+  const indexOfLastMessage = currentPage * pageSize;
+  const indexOfFirstMessage = indexOfLastMessage - pageSize;
+  const currentMessages = messages.slice(indexOfFirstMessage, indexOfLastMessage);
+
+
   return (
     <Fragment>
       <form onSubmit={handleSubmit}>
@@ -148,7 +166,7 @@ const GuestForm = () => {
       <div className="w-full rounded-4 mt-4 mb-2" id="daftar-ucapan">
         <ol className="relative border-gray-200 dark:border-gray-400 ">
           {
-            messages.map((message: any, index) => {
+            currentMessages.map((message: any, index) => {
               return (
                 <li className="" key={index}>
                   <div className="mb-4 items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:bg-gray-700 dark:border-gray-600">
@@ -172,8 +190,15 @@ const GuestForm = () => {
               )
             })
           }
-
         </ol>
+        <div className="flex justify-between mt-4">
+          <button onClick={prevPage} disabled={currentPage === 1} className="px-4 py-2 bg-blue-700 rounded-md text-white">
+            Previous
+          </button>
+          <button onClick={nextPage} disabled={indexOfLastMessage >= messages.length} className="px-4 py-2 bg-blue-700 rounded-md text-white">
+            Next
+          </button>
+        </div>
       </div>
       {showSuccessModal && (
         <div className="fixed inset-0 z-10 overflow-y-auto">
