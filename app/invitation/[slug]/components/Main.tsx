@@ -4,6 +4,7 @@ import Countdown from "./CountDown";
 import FadeInComponent from "./FadeInComponent";
 import GuestForm from "./GuestForm";
 import Music from "./Music";
+import Image from "next/image";
 
 const Main = ({ className }: any) => {
   return (
@@ -109,7 +110,7 @@ const Main = ({ className }: any) => {
                 <div
 
                 >
-                  <img className="badge-image" src="/1.jpg" />
+                  <Image width={160}  height={160} alt="gambar 1" className="badge-image" src="/1.jpg" />
 
                 </div>
                 <div className="timeline-panel">
@@ -130,7 +131,7 @@ const Main = ({ className }: any) => {
 
                 
                 >
-                  <img className="badge-image" src="/2.jpg" />
+                  <Image width={160}  height={160} alt="gambar 2" className="badge-image" src="/2.jpg" />
 
                 </div>
                 <div className="timeline-panel">
@@ -150,7 +151,7 @@ const Main = ({ className }: any) => {
                 <div
 
                 >
-                   <img className="badge-image" src="/3.jpg" />
+                   <Image width={160}  height={160} alt="gambar 3" className="badge-image" src="/3.jpg" />
                 </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
@@ -169,7 +170,7 @@ const Main = ({ className }: any) => {
                 <div
                   
                 >
-                  <img className="badge-image" src="/4.jpg" />
+                  <Image width={160}  height={160} alt="gambar 4" className="badge-image" src="/4.jpg" />
                 </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
