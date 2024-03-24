@@ -110,7 +110,7 @@ const Main = ({ className }: any) => {
                 <div
 
                 >
-                  <Image width={160}  height={160} alt="gambar 1" className="badge-image" src="/1.jpg" />
+                  <Image width={160}  height={160} alt="gambar 1" className="badge-image" src="/memo1.JPG" />
 
                 </div>
                 <div className="timeline-panel">
@@ -131,7 +131,7 @@ const Main = ({ className }: any) => {
 
                 
                 >
-                  <Image width={160}  height={160} alt="gambar 2" className="badge-image" src="/2.jpg" />
+                  <Image width={160}  height={160} alt="gambar 2" className="badge-image" src="/memo2.JPG" />
 
                 </div>
                 <div className="timeline-panel">
@@ -151,7 +151,7 @@ const Main = ({ className }: any) => {
                 <div
 
                 >
-                   <Image width={160}  height={160} alt="gambar 3" className="badge-image" src="/3.jpg" />
+                   <Image width={160}  height={160} alt="gambar 3" className="badge-image" src="/memo3.JPG" />
                 </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
@@ -170,7 +170,7 @@ const Main = ({ className }: any) => {
                 <div
                   
                 >
-                  <Image width={160}  height={160} alt="gambar 4" className="badge-image" src="/4.jpg" />
+                  <Image width={160}  height={160} alt="gambar 4" className="badge-image" src="/memo4.JPG" />
                 </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
