@@ -50,7 +50,7 @@ const Header = ({onClick, text}:any) => {
               </div>
 
               <h1 className="font-sacramento my-4 text-4xl md:text-8xl">Selvi & Diwa</h1>
-              <h1 className="mb-6">17 April 2024</h1>
+              <h1 className="mb-6">Rabu, 17 April 2024</h1>
 
               <h2> Dear {capitalizeEachWord(guestName)}</h2>
               <button
