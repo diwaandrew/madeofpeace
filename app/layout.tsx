@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <link rel="icon"  href="/bg.jpeg" />
+        <link rel="icon"  href="/love.png" />
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
