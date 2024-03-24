@@ -107,9 +107,11 @@ const Main = ({ className }: any) => {
             <ul className="timeline animate-box">
             <li>
                 <div
-                  className="timeline-badge"
-                  style={{ backgroundImage: "url('/1.jpg')" }}
-                ></div>
+
+                >
+                  <img className="badge-image" src="/1.jpg" />
+
+                </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
                     <h3 className="timeline-title">Cerita Awal</h3>
@@ -125,9 +127,12 @@ const Main = ({ className }: any) => {
               </li>
               <li className="timeline-inverted">
                 <div
-                  className="timeline-badge"
-                  style={{ backgroundImage: "url('/2.jpg')" }}
-                ></div>
+
+                
+                >
+                  <img className="badge-image" src="/2.jpg" />
+
+                </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
                     <h3 className="timeline-title">Kembali Berjumpa</h3>
@@ -143,9 +148,10 @@ const Main = ({ className }: any) => {
               </li>
               <li>
                 <div
-                  className="timeline-badge"
-                  style={{ backgroundImage: "url('/3.jpg')" }}
-                ></div>
+
+                >
+                   <img className="badge-image" src="/3.jpg" />
+                </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
                     <h3 className="timeline-title">Kisah Kasih</h3>
@@ -161,9 +167,10 @@ const Main = ({ className }: any) => {
               </li>
               <li className="timeline-inverted">
                 <div
-                  className="timeline-badge"
-                  style={{ backgroundImage: "url('/4.jpg')" }}
-                ></div>
+                  
+                >
+                  <img className="badge-image" src="/4.jpg" />
+                </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
                     <h3 className="timeline-title">Langkah</h3>
