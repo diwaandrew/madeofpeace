@@ -213,7 +213,7 @@ const Main = ({ className }: any) => {
                 data-aos-duration="1500"
               >
                 <h1 className="font-sacramento text-4xl">Akad</h1>
-                <p className="font-bold text-sm">Pukul 10.00 WIB - Selesai</p>
+                <p className="font-bold text-sm">Pukul 09.00 WIB - Selesai</p>
               </div>
 
               <div
