@@ -34,7 +34,7 @@ const Main = ({ className }: any) => {
               <div className="flex flex-col items-center">
                 <Image
                   className="w-[300px] rounded-full border border-3 border-light shadow profile-image"
-                  src="/ESA.jpg"
+                  src="/esa.jpg"
                   alt="WOMAN"
                   width={190}
                   height={70}
@@ -60,7 +60,7 @@ const Main = ({ className }: any) => {
               >
                 <Image
                   className="w-[300px] rounded-full border border-3 border-light shadow profile-image"
-                  src="/DIW.jpg"
+                  src="/diw.jpg"
                   alt="MAN"
                   width={190}
                   height={70}
