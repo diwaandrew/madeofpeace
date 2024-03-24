@@ -8,8 +8,8 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Wedding of Esa & Diwa",
-  description: "17 April 2024",
+  title: "Wedding of Selvi & Diwa",
+  description: "17 April 2024 ",
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <link rel="icon"  href="/bg.jpeg" />
+        <link rel="icon"  href="/love.png" />
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
