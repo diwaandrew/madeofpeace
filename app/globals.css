@@ -95,13 +95,36 @@ body {
     width: 1px;
     background-color: #d4d4d4;
     left: 50%;
-    margin-left: 0
+    margin-left: 0;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline:before {
+      margin-top:50px;
+      margin-bottom: 100px;
+  }
 }
 
 @media screen and (max-width: 480px) {
     .timeline:before {
-        margin-left:-64px
+        margin-left:-64px;
+        margin-bottom: 300px;
     }
+}
+
+@media screen and (max-width: 425px) {
+  .timeline:before {
+      margin-top:40px;
+      margin-bottom: 300px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .timeline:before {
+      margin-top:40px;
+      margin-bottom: 300px;
+  }
 }
 
 .timeline>li {
@@ -296,12 +319,21 @@ body {
 
 /* Add more classes for other background images as needed */
 
-/* Example for adding more classes */
-.background-first-meeting {
-  background-image: url('/thekusuma/static/p-first-meeting.jpg');
-  background-size: cover;
-  background-position: center;
-}
+/* @media (max-width: 768px) {
+  .timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 1px;
+    background-color: #d4d4d4;
+    left: 50%;
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+} */
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {

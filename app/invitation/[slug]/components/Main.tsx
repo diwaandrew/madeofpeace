@@ -117,12 +117,10 @@ const Main = ({ className }: any) => {
           <div className="col-md-12 col-md-offset-0">
             <ul className="timeline animate-box">
             <li>
-                <div
-
-                >
-                  <Image width={160}  height={160} alt="gambar 1" className="badge-image" src="/memo11.jpg" />
-
-                </div>
+            <div
+                  className="timeline-badge"
+                  style={{ backgroundImage: "url('/memo11.jpg')" }}
+                ></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
                     <h3 className="timeline-title">Cerita Awal</h3>
@@ -137,13 +135,10 @@ const Main = ({ className }: any) => {
                 </div>
               </li>
               <li className="timeline-inverted">
-                <div
-
-                
-                >
-                  <Image width={160}  height={160} alt="gambar 2" className="badge-image" src="/memo21.jpg" />
-
-                </div>
+              <div
+                  className="timeline-badge"
+                  style={{ backgroundImage: "url('/memo21.jpg')" }}
+                ></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
                     <h3 className="timeline-title">Kembali Berjumpa</h3>
@@ -158,11 +153,10 @@ const Main = ({ className }: any) => {
                 </div>
               </li>
               <li>
-                <div
-
-                >
-                   <Image width={160}  height={160} alt="gambar 3" className="badge-image" src="/memo31.jpg" />
-                </div>
+              <div
+                  className="timeline-badge"
+                  style={{ backgroundImage: "url('/memo31.jpg')" }}
+                ></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
                     <h3 className="timeline-title">Kisah Kasih</h3>
@@ -177,11 +171,10 @@ const Main = ({ className }: any) => {
                 </div>
               </li>
               <li className="timeline-inverted">
-                <div
-                  
-                >
-                  <Image width={160}  height={160} alt="gambar 4" className="badge-image" src="/memo41.jpg" />
-                </div>
+              <div
+                  className="timeline-badge"
+                  style={{ backgroundImage: "url('/memo41.jpg')" }}
+                ></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
                     <h3 className="timeline-title">Langkah</h3>
