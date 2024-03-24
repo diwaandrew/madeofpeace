@@ -21,13 +21,6 @@ const GuestForm = () => {
 
   const [showSuccessModal, setShowSuccessModal] = useState(false); // State to manage the visibility of the success modal
 
-
-  const fetchData = async () => {
-    const response = await fetch('/api/guest/get')
-    const data = await response.json();
-    setMessages(data);
-  }
-
   // // Fetch messages on component mount
   // useEffect(() => {
   //   (async () => {
@@ -128,7 +121,7 @@ const GuestForm = () => {
           <input
             type="text"
             value={formData.name}
-            className="px-4 py-2 border text-sm text-white rounded-md bg-transparent"
+            className="px-4 py-2 border text-sm dark:text-white rounded-md bg-transparent"
             name="name" // Changed to match state keys
             placeholder="Isikan Nama Anda"
             onChange={handleChange}
@@ -140,7 +133,7 @@ const GuestForm = () => {
             Kehadiran
           </label>
           <select
-            className="px-4 py-2 border text-sm text-white rounded-md bg-transparent"
+            className="px-4 py-2 border text-sm dark:text-white rounded-md bg-transparent"
             name="attendance" // Changed to match state keys
             onChange={handleChange}
             value={formData.attendance} // Add value attribute
@@ -157,7 +150,7 @@ const GuestForm = () => {
             Ucapan & Doa
           </label>
           <textarea
-            className="px-4 py-2 border text-sm text-white rounded-md bg-transparent"
+            className="px-4 py-2 border text-sm dark:text-white rounded-md bg-transparent"
             name="message" // Changed to match state keys
             placeholder="Tulis Ucapan & Doa"
             onChange={handleChange}
@@ -167,7 +160,7 @@ const GuestForm = () => {
         <div className="">
           <button
             type="submit"
-            className="w-full justify-center flex mx-auto px-4 py-2 bg-blue-700 rounded-md text-center gap-2"
+            className="w-full justify-center text-white flex mx-auto px-4 py-2 bg-blue-700 rounded-md text-center gap-2"
           >
             Kirim <Send />
           </button>

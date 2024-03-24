@@ -22,7 +22,8 @@ export async function createMessage(name:any, attendance:any, message:any) {
     try {
       const { data, error } = await supabase
         .from('messages')
-        .select('*');
+        .select('*')
+        .order('created_at', { ascending: false });
   
       if (error) throw error;
       
