@@ -33,8 +33,8 @@ const Main = ({ className }: any) => {
             <FadeInComponent fadeDirection="left" delay={0.1}>
               <div className="flex flex-col items-center">
                 <Image
-                  className="w-[300px] rounded-full border border-3 border-light shadow profile-image"
-                  src="/esa.jpg"
+                  className="w-[300px] rounded-full profile-image"
+                  src="/esa1.jpg"
                   alt="WOMAN"
                   width={190}
                   height={70}
@@ -60,7 +60,7 @@ const Main = ({ className }: any) => {
               >
                 <Image
                   className="w-[300px] rounded-full border border-3 border-light shadow profile-image"
-                  src="/diw.jpg"
+                  src="/diw1.jpg"
                   alt="MAN"
                   width={190}
                   height={70}
@@ -120,7 +120,7 @@ const Main = ({ className }: any) => {
                 <div
 
                 >
-                  <Image width={160}  height={160} alt="gambar 1" className="badge-image" src="/memo1.JPG" />
+                  <Image width={160}  height={160} alt="gambar 1" className="badge-image" src="/memo11.jpg" />
 
                 </div>
                 <div className="timeline-panel">
@@ -141,7 +141,7 @@ const Main = ({ className }: any) => {
 
                 
                 >
-                  <Image width={160}  height={160} alt="gambar 2" className="badge-image" src="/memo2.JPG" />
+                  <Image width={160}  height={160} alt="gambar 2" className="badge-image" src="/memo21.jpg" />
 
                 </div>
                 <div className="timeline-panel">
@@ -161,7 +161,7 @@ const Main = ({ className }: any) => {
                 <div
 
                 >
-                   <Image width={160}  height={160} alt="gambar 3" className="badge-image" src="/memo3.JPG" />
+                   <Image width={160}  height={160} alt="gambar 3" className="badge-image" src="/memo31.jpg" />
                 </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
@@ -180,7 +180,7 @@ const Main = ({ className }: any) => {
                 <div
                   
                 >
-                  <Image width={160}  height={160} alt="gambar 4" className="badge-image" src="/memo4.JPG" />
+                  <Image width={160}  height={160} alt="gambar 4" className="badge-image" src="/memo41.jpg" />
                 </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
