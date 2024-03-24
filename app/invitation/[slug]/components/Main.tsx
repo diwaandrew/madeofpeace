@@ -212,6 +212,7 @@ const Main = ({ className }: any) => {
                 data-aos="fade-left"
                 data-aos-duration="1500"
               >
+                <p className="font-bold text-sm pb-5">Rabu, 17 April 2024</p>
                 <h1 className="font-sacramento text-4xl">Akad</h1>
                 <p className="font-bold text-sm">Pukul 09.00 WIB - Selesai</p>
               </div>
