@@ -41,7 +41,7 @@ const Header = ({onClick, text}:any) => {
               <div className="relative flex place-items-center">
                 <Image
                   className="rounded-full shadow-md white"
-                  src="/welcome2.jpg"
+                  src="/welcome3.jpg"
                   alt="Next.js Logo"
                   width={190}
                   height={70}

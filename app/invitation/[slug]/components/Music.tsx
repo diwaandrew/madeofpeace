@@ -39,7 +39,7 @@ const MusicPlayer = () => {
   return (
     <div style={{ position: 'relative' }}>
       <audio controls autoPlay={autoplay} ref={audioRef} style={{ visibility: "hidden" }}>
-          <source src="/song-wedding.mp3" type="audio/mpeg" />
+          <source src="/jazbersamamu.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
       </audio>
       <button 

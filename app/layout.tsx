@@ -8,8 +8,8 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Wedding of Esa & Diwa",
-  description: "17 April 2024",
+  title: "Wedding of Selvi & Diwa",
+  description: "17 April 2024 ",
 };
 
 export default function RootLayout({
