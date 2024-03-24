@@ -32,9 +32,14 @@ const Main = ({ className }: any) => {
           <div className="flex flex-col items-center">
             <FadeInComponent fadeDirection="left" delay={0.1}>
               <div className="flex flex-col items-center">
-                <div className="w-[300px] rounded-full border border-3 border-light shadow ">
-                  <img src="/cewe.png" alt="cewe" />
-                </div>
+                <Image
+                  className="w-[300px] rounded-full border border-3 border-light shadow profile-image"
+                  src="/ESA.jpg"
+                  alt="WOMAN"
+                  width={190}
+                  height={70}
+                  priority
+                />
                 <div className="my-4">
                   <h1 className="font-sacramento text-4xl">
                     Eka Selvi Anggraeni
@@ -53,9 +58,14 @@ const Main = ({ className }: any) => {
               <div
                 className="flex flex-col items-center" // Apply fade-right here
               >
-                <div className="w-[300px] rounded-full border border-3 border-light shadow">
-                  <img src="/cowo.png" alt="cowo" />
-                </div>
+                <Image
+                  className="w-[300px] rounded-full border border-3 border-light shadow profile-image"
+                  src="/DIW.jpg"
+                  alt="MAN"
+                  width={190}
+                  height={70}
+                  priority
+                />
                 <div className="my-4">
                   <h1 className="font-sacramento text-4xl">
                     Andre Diwa Aji Pratama

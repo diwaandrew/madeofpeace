@@ -204,6 +204,15 @@ body {
     border-radius: 50%;
 }
 
+.profile-image{
+  color: transparent;
+  border-radius: 100%;
+  /* height: fit-content; */
+  object-fit: cover;
+  height: 300px;
+  object-position: 30% 5%;
+}
+
 @media screen and (max-width: 480px) {
     .timeline>li>.timeline-badge {
         width:60px;

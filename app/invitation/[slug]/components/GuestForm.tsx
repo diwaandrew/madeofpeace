@@ -1,11 +1,20 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
 import { Send } from "lucide-react";
 import { createMessage, getMessages } from "@/api/api";
+import dataGuest from "@/api/guest";
+import { capitalizeEachWord, convertToLower, decodeAndReplace } from "@/lib/library-function";
+import { useParams } from "next/navigation";
 
 const GuestForm = () => {
+
+  const { slug } = useParams();
+  const [detailInvitation, setDetailInvitation] = useState(false);
+  const name = decodeAndReplace(slug);
+  const guestName = decodeAndReplace(name);
+
   const [messages, setMessages] = useState([]);
   const [formData, setFormData] = useState<any>({
-    name: "",
+    name: guestName,
     attendance: "1", // Default value as the first option
     message: "",
   });
@@ -123,6 +132,7 @@ const GuestForm = () => {
             name="name" // Changed to match state keys
             placeholder="Isikan Nama Anda"
             onChange={handleChange}
+            
           />
         </div>
         <div className="my-4 flex flex-col gap-2">
