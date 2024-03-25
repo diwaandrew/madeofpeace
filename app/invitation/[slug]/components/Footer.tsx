@@ -7,14 +7,15 @@ const Footer = () => {
         <div className="">
           <div className="text-center">
             <p
-              style={{ fontSize: 0.7 }}
               className="pt-2 pb-1 px-2"
               data-aos="fade-up"
               data-aos-duration="1500"
             >
               Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila,
-              Bapak / Ibu / Saudara / i. berkenan hadir untuk memberikan doa
-              restunya kami ucapkan terimakasih.
+              Bapak / Ibu / Saudara / i. <br/>Berkenan hadir untuk memberikan doa
+              restunya kami ucapkan terimakasih.<br/><br/>
+              Kami yang berbahagia,<br/>
+              Selvi & Diwa
             </p>
 
             <h1
