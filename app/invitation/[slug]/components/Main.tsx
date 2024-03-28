@@ -5,8 +5,20 @@ import FadeInComponent from "./FadeInComponent";
 import GuestForm from "./GuestForm";
 import Music from "./Music";
 import Image from "next/image";
+import React, {useState} from "react";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Main = ({ className }: any) => {
+  const [previewVisible, setPreviewVisible] = useState(false);
+  const togglePreview = () => {
+      setPreviewVisible(!previewVisible);
+      setPreviewVisible(true)
+      setTimeout(() => {
+        setPreviewVisible(false)
+      }, 1500)
+      return;
+  };
+
   return (
     <main className={`container mx-auto ${className}`}>
       <div className="flex flex-col items-center" id="mempelai">
@@ -84,8 +96,6 @@ const Main = ({ className }: any) => {
         <FadeInComponent fadeDirection="down" delay={0.16}>
           <div
             className="flex flex-col items-center text-center"
-            data-aos="fade-up"
-            data-aos-duration="2000"
           >
             <h1 className="font-sacramento text-4xl mt-0 mb-3">
               Allah Subhanahu Wa Ta`ala berfirman
@@ -116,76 +126,148 @@ const Main = ({ className }: any) => {
 
           <div className="col-md-12 col-md-offset-0">
             <ul className="timeline animate-box">
-            <li>
-            <div
-                  className="timeline-badge"
-                  style={{ backgroundImage: "url('/memo11.jpg')" }}
+              <li>
+                <div
+                    className="timeline-badge"
+                    style={{ 
+                        backgroundImage: "url('/memo11.jpg')",
+                        cursor: "pointer"
+                    }}
+                    onClick={togglePreview}
                 ></div>
+                {previewVisible && (
+                    <div>
+                        <CustomToast
+                          imageSrc="/memo11.jpg"
+                          imageAlt="cerita awal"
+                          imageWidth={190}
+                          imageHeight={70}
+                        />
+                    </div>
+                )}
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h3 className="timeline-title">Cerita Awal</h3>
-                    <span className="date">2018</span>
+                    <FadeInComponent fadeDirection="left" delay={0.18}>
+                      <h3 className="timeline-title">Cerita Awal</h3>
+                      <span className="date">2018</span>
+                    </FadeInComponent>
                   </div>
                   <div className="timeline-body">
-                    <p>
-                    Katanya, pertemuan pertama dengan orang baru selalu tidak terduga. 
-                    Ya, itu juga terjadi pada kami. Melalui sebuah pertemuan kecil dan singkat itu, ternyata perkenalan itu berlanjut.
-                    </p>
+                    <FadeInComponent fadeDirection="left" delay={0.18}>
+                      <p>
+                      Katanya, pertemuan pertama dengan orang baru selalu tidak terduga. 
+                      Ya, itu juga terjadi pada kami. Melalui sebuah pertemuan kecil dan singkat itu, ternyata perkenalan itu berlanjut.
+                      </p>
+                    </FadeInComponent>
                   </div>
                 </div>
               </li>
               <li className="timeline-inverted">
-              <div
-                  className="timeline-badge"
-                  style={{ backgroundImage: "url('/memo21.jpg')" }}
+                <div
+                    className="timeline-badge"
+                    style={{ 
+                        backgroundImage: "url('/memo21.jpg')",
+                        cursor: "pointer"
+                    }}
+                    onClick={togglePreview}
                 ></div>
+                {previewVisible && (
+                    <div>
+                        <CustomToast
+                          imageSrc="/memo21.jpg"
+                          imageAlt="kembali berjumpa"
+                          imageWidth={190}
+                          imageHeight={70}
+                        />
+                    </div>
+                )}
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h3 className="timeline-title">Kembali Berjumpa</h3>
-                    <span className="date">2019</span>
+                    <FadeInComponent fadeDirection="left" delay={0.18}>
+                      <h3 className="timeline-title">Kembali Berjumpa</h3>
+                      <span className="date">2019</span>
+                    </FadeInComponent>
                   </div>
                   <div className="timeline-body">
-                    <p>
-                    Selayaknya orang pdkt pada umumnya, kami juga melakukan hal yang sama. 
-                    Bedanya, setelah itu kami mengambil waktu sendiri karena kesibukan dan kehidupan masing-masing. {" "}
-                    </p>
+                    <FadeInComponent fadeDirection="left" delay={0.18}>
+                      <p>
+                        Selayaknya orang pdkt pada umumnya, kami juga melakukan hal yang sama. 
+                        Bedanya, setelah itu kami mengambil waktu sendiri karena kesibukan dan kehidupan masing-masing. {" "}
+                      </p>
+                    </FadeInComponent>
                   </div>
                 </div>
               </li>
               <li>
               <div
-                  className="timeline-badge"
-                  style={{ backgroundImage: "url('/memo31.jpg')" }}
+                    className="timeline-badge"
+                    style={{ 
+                        backgroundImage: "url('/memo31.jpg')",
+                        cursor: "pointer"
+                    }}
+                    onClick={togglePreview}
                 ></div>
+                {previewVisible && (
+                    <div>
+                        <CustomToast
+                          imageSrc="/memo31.jpg"
+                          imageAlt="kisah kasih"
+                          imageWidth={190}
+                          imageHeight={70}
+                        />
+                    </div>
+                )}
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h3 className="timeline-title">Kisah Kasih</h3>
-                    <span className="date">2021</span>
+                    <FadeInComponent fadeDirection="left" delay={0.18}>
+                      <h3 className="timeline-title">Kisah Kasih</h3>
+                      <span className="date">2021</span>
+                    </FadeInComponent>
                   </div>
                   <div className="timeline-body">
-                    <p>
-                    Tahun dimana tiba2 semua ada jalan untuk kembali bertemu 
-                    dan kali ini lebih intens untuk mengenal satu sama lain. 
-                    </p>
+                    <FadeInComponent fadeDirection="left" delay={0.18}>
+                      <p>
+                      Tahun dimana tiba2 semua ada jalan untuk kembali bertemu 
+                      dan kali ini lebih intens untuk mengenal satu sama lain. 
+                      </p>
+                    </FadeInComponent>
                   </div>
                 </div>
               </li>
               <li className="timeline-inverted">
-              <div
-                  className="timeline-badge"
-                  style={{ backgroundImage: "url('/memo41.jpg')" }}
+                <div
+                      className="timeline-badge"
+                      style={{ 
+                          backgroundImage: "url('/memo41.jpg')",
+                          cursor: "pointer"
+                      }}
+                      onClick={togglePreview}
                 ></div>
+                {previewVisible && (
+                  <div>
+                      <CustomToast
+                        imageSrc="/memo41.jpg"
+                        imageAlt="langkah"
+                        imageWidth={190}
+                        imageHeight={70}
+                      />
+                  </div>
+                )}
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h3 className="timeline-title">Langkah</h3>
-                    <span className="date">2024</span>
+                    <FadeInComponent fadeDirection="left" delay={0.18}>
+                      <h3 className="timeline-title">Langkah</h3>
+                      <span className="date">2024</span>
+                    </FadeInComponent>
                   </div>
                   <div className="timeline-body">
-                    <p>
-                    Dimulai dari tahun ini dan tahun-tahun berikutnya, 
-                    kami berkomitmen untuk membersamai satu sama lain dalam susah, 
-                    senang dan nano nano kehidupan yang lain. Selamanya. Doain kita guysss{" "}
-                    </p>
+                    <FadeInComponent fadeDirection="left" delay={0.18}>
+                      <p>
+                      Dimulai dari tahun ini dan tahun-tahun berikutnya, 
+                      kami berkomitmen untuk membersamai satu sama lain dalam susah, 
+                      senang dan nano nano kehidupan yang lain. Selamanya. Doain kita guysss{" "}
+                      </p>
+                    </FadeInComponent>
                   </div>
                 </div>
               </li>
@@ -196,54 +278,60 @@ const Main = ({ className }: any) => {
       <section className="dark-section" id="tanggal">
         <div className="">
           <div className="text-center">
-            <h1 className="font-sacramento my-4 text-4xl md:text-8xl py-3">
-              Waktu Menuju Acara
-            </h1>
-            <Countdown />
+            <FadeInComponent fadeDirection="down" delay={0.18}>  
+              <h1 className="font-sacramento my-4 text-4xl md:text-8xl py-3">
+                Waktu Menuju Acara
+              </h1>
+            </FadeInComponent>  
 
-            <p className="text-xs mt-4 mx-4 py-2">
-              Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta`ala,
-              insyaAllah kami akan menyelenggarakan acara :
-            </p>
+            <FadeInComponent fadeDirection="left" delay={0.18}>
+              <Countdown />
+            </FadeInComponent>
+
+            <FadeInComponent fadeDirection="down" delay={0.18}>
+              <p className="text-xs mt-4 mx-4 py-2">
+                Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta`ala,
+                insyaAllah kami akan menyelenggarakan acara :
+              </p>
+            </FadeInComponent>
 
             <div className="overflow-x-hidden">
-              <div
-                className="py-2"
-                data-aos="fade-left"
-                data-aos-duration="1500"
-              >
+              <FadeInComponent fadeDirection="left" delay={0.18}>
                 <p className="font-bold text-sm pb-5">Rabu, 17 April 2024</p>
+              </FadeInComponent>
+              <FadeInComponent fadeDirection="down" delay={0.18}>  
                 <h1 className="font-sacramento text-4xl">Akad</h1>
+              </FadeInComponent>
+              <FadeInComponent fadeDirection="left" delay={0.18}>  
                 <p className="font-bold text-sm">Pukul 09.00 WIB - Selesai</p>
-              </div>
-
-              <div
-                className="py-2"
-                data-aos="fade-right"
-                data-aos-duration="1500"
-              >
-                <h1 className="font-sacramento text-4xl">Resepsi</h1>
+              </FadeInComponent>
+              <FadeInComponent fadeDirection="down" delay={0.18}>
+                <h1 className="font-sacramento text-4xl pt-10">Resepsi</h1>
+              </FadeInComponent>
+              <FadeInComponent fadeDirection="left" delay={0.18}>
                 <p className="font-bold text-sm">Pukul 13.00 WIB - Selesai</p>
-              </div>
+              </FadeInComponent>
             </div>
 
-            <div
-              className="mx-auto flex flex-col items-center py-4"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
-              <Link
-                href="https://goo.gl/maps/emMJszRiX6uT2NKq5"
-                target="_blank"
-                className="flex  items-center gap-2 rounded-full text-sm items-center w-[300px] px-4 py-2 justify-center border"
+            <FadeInComponent fadeDirection="down" delay={0.18}>
+              <div
+                className="mx-auto flex flex-col items-center py-2"
               >
-                <MapPinned />
-                Lihat Google Maps
-              </Link>
-              <p className="mb-0 mt-2 mx-1 pb-4" style={{ fontSize: 0.9 }}>
+                <Link
+                  href="https://goo.gl/maps/emMJszRiX6uT2NKq5"
+                  target="_blank"
+                  className="flex  items-center gap-2 rounded-full text-sm items-center w-[300px] px-4 py-2 justify-center border"
+                >
+                  <MapPinned />
+                  Lihat Google Maps
+                </Link>
+              </div>
+            </FadeInComponent>
+            <FadeInComponent fadeDirection="left" delay={0.18}>  
+              <p className="text-xs mt-2 pb-4">
                 Dusun Beber Kejene, Rt. 54 Rw. 05 Randudongkal - Pemalang.
               </p>
-            </div>
+            </FadeInComponent>
           </div>
         </div>
       </section>
@@ -251,11 +339,12 @@ const Main = ({ className }: any) => {
       <section className="w-full" id="ucapan">
         <div className="flex flex-col items-center">
           <div className="w-full mx-8 border rounded-md shadow p-3">
-            <h1 className="text-center font-sacramento my-4 text-4xl md:text-8xl py-3">
-              Ucapan & Doa
-            </h1>
-            <div className="mb-1" id="balasan"></div>
-
+            <FadeInComponent fadeDirection="down" delay={0.18}>
+              <h1 className="text-center font-sacramento my-4 text-4xl md:text-8xl py-3">
+                Ucapan & Doa
+              </h1>
+              <div className="mb-1" id="balasan"></div>
+            </FadeInComponent>
             <GuestForm />
             
           </div>
@@ -267,3 +356,24 @@ const Main = ({ className }: any) => {
 };
 
 export default Main;
+
+const CustomToast = (props:any) => {
+  return (
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-black bg-opacity-50 flex items-center justify-center">
+      <div className="inline-block rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
+        <div className="px-4 pt-2 pb-4 sm:p-6 sm:pb-4">
+          <div className="sm:flex sm:items-start">
+            <Image
+              className="w-[300px] rounded-full border border-3 border-light shadow profile-image"
+              src={props.imageSrc}
+              alt={props.imageAlt}
+              width={props.imageWidth}
+              height={props.imageHeight}
+              priority
+            /> 
+          </div>
+        </div>
+      </div> 
+    </div>
+  );
+};
