@@ -166,7 +166,7 @@ const Main = ({ className }: any) => {
                     </FadeInComponent>
                   </div>
                   <div className="timeline-body">
-                    <FadeInComponent fadeDirection="left" delay={0.18}>
+                    <FadeInComponent fadeDirection="right" delay={0.18}>
                       <p>
                       Katanya, pertemuan pertama dengan orang baru selalu tidak terduga. 
                       Ya, itu juga terjadi pada kami. Melalui sebuah pertemuan kecil dan singkat itu, ternyata perkenalan itu berlanjut.
@@ -301,7 +301,7 @@ const Main = ({ className }: any) => {
               <Countdown />
             </FadeInComponent>
 
-            <FadeInComponent fadeDirection="down" delay={0.18}>
+            <FadeInComponent fadeDirection="right" delay={0.18}>
               <p className="text-xs mt-4 mx-4 py-2">
                 Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta`ala,
                 insyaAllah kami akan menyelenggarakan acara :
