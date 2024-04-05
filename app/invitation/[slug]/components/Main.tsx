@@ -10,8 +10,21 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Main = ({ className }: any) => {
   const [previewVisible, setPreviewVisible] = useState(false);
-  const togglePreview = () => {
+  const [newImage, setNewImage] = useState("");
+
+  const togglePreview = (code :any) => {
+
       setPreviewVisible(!previewVisible);
+      if(code===1){
+        setNewImage('/memo11.jpg')
+      }else if (code===2){
+        setNewImage('/memo21.jpg')
+      }else if (code===3){
+        setNewImage('/memo31.jpg')
+      }else{
+        setNewImage('/memo41.jpg')
+      }
+
       setPreviewVisible(true)
       setTimeout(() => {
         setPreviewVisible(false)
@@ -133,12 +146,12 @@ const Main = ({ className }: any) => {
                         backgroundImage: "url('/memo11.jpg')",
                         cursor: "pointer"
                     }}
-                    onClick={togglePreview}
+                    onClick={()=> togglePreview(1)}
                 ></div>
                 {previewVisible && (
                     <div>
                         <CustomToast
-                          imageSrc="/memo11.jpg"
+                          imageSrc={newImage}
                           imageAlt="cerita awal"
                           imageWidth={190}
                           imageHeight={70}
@@ -169,12 +182,12 @@ const Main = ({ className }: any) => {
                         backgroundImage: "url('/memo21.jpg')",
                         cursor: "pointer"
                     }}
-                    onClick={togglePreview}
+                    onClick={()=> togglePreview(2)}
                 ></div>
                 {previewVisible && (
                     <div>
                         <CustomToast
-                          imageSrc="/memo21.jpg"
+                          imageSrc={newImage}
                           imageAlt="kembali berjumpa"
                           imageWidth={190}
                           imageHeight={70}
@@ -205,12 +218,12 @@ const Main = ({ className }: any) => {
                         backgroundImage: "url('/memo31.jpg')",
                         cursor: "pointer"
                     }}
-                    onClick={togglePreview}
+                    onClick={() => togglePreview(3)}
                 ></div>
                 {previewVisible && (
                     <div>
                         <CustomToast
-                          imageSrc="/memo31.jpg"
+                          imageSrc={newImage}
                           imageAlt="kisah kasih"
                           imageWidth={190}
                           imageHeight={70}
@@ -241,12 +254,12 @@ const Main = ({ className }: any) => {
                           backgroundImage: "url('/memo41.jpg')",
                           cursor: "pointer"
                       }}
-                      onClick={togglePreview}
+                      onClick={() => togglePreview(4)}
                 ></div>
                 {previewVisible && (
                   <div>
                       <CustomToast
-                        imageSrc="/memo41.jpg"
+                        imageSrc={newImage}
                         imageAlt="langkah"
                         imageWidth={190}
                         imageHeight={70}
@@ -359,12 +372,12 @@ export default Main;
 
 const CustomToast = (props:any) => {
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black bg-opacity-50 flex items-center justify-center">
-      <div className="inline-block rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:max-w-lg sm:w-full">
-        <div className="px-4 pt-2 pb-4 sm:p-6 sm:pb-4">
+    <div className="fixed inset-0 z-[999] overflow-y-auto bg-black bg-opacity-30 flex items-center justify-center">
+      <div className="inline-block rounded-full text-left overflow-hidden transform transition-all sm:max-w-lg sm:w-full border-white">
+        <div className="px-4 pt-2 pb-4 sm:p-6 sm:pb-4 rounded-full">
           <div className="sm:flex sm:items-start">
             <Image
-              className="w-[300px] rounded-full border border-3 border-light shadow profile-image"
+              className="w-[300px] rounded-full border border-3 border-light shadow profile-image border-white"
               src={props.imageSrc}
               alt={props.imageAlt}
               width={props.imageWidth}
