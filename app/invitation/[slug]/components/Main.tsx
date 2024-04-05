@@ -372,10 +372,10 @@ export default Main;
 
 const CustomToast = (props:any) => {
   return (
-    <div className="fixed inset-0 z-[999] overflow-y-auto bg-black bg-opacity-30 flex items-center justify-center">
+    <div className="fixed inset-0 z-[999] overflow-y-auto mx-auto bg-black bg-opacity-30 flex items-center justify-center">
       <div className="inline-block rounded-full text-left overflow-hidden transform transition-all sm:max-w-lg sm:w-full border-white">
         <div className="px-4 pt-2 pb-4 sm:p-6 sm:pb-4 rounded-full">
-          <div className="sm:flex sm:items-start">
+          <div className="sm:flex justify-center">
             <Image
               className="w-[300px] rounded-full border border-3 border-light shadow profile-image border-white"
               src={props.imageSrc}
