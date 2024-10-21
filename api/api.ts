@@ -4,7 +4,7 @@ import { supabase } from './../lib/supabase';
 export async function createMessage(name:any, attendance:any, message:any) {
     try {
       const { data, error } = await supabase
-        .from('messages')
+        .from('bayuWedding')
         .insert([
           { name, attendance, message }
         ]);
@@ -21,7 +21,7 @@ export async function createMessage(name:any, attendance:any, message:any) {
   export async function getMessages() {
     try {
       const { data, error } = await supabase
-        .from('messages')
+        .from('bayuWedding')
         .select('*')
         .order('created_at', { ascending: false });
   
