@@ -30,7 +30,7 @@ const Header = ({onClick, text}:any) => {
 <header>
         <div>
           <div className="flex justify-center items-center h-screen aurora">
-            <div className="my-8 flex flex-col items-center text-center bg-no-repeat bg-center text-black">
+            <div className="my-8 flex flex-col items-center text-center bg-no-repeat bg-center text-white">
               <div className="my-4">
                 <img
                   width={"80px"}
@@ -39,18 +39,18 @@ const Header = ({onClick, text}:any) => {
               </div>
               <h1 className="font-sacramento mb-6 text-4xl">The Wedding Of</h1>
               <div className="relative flex place-items-center">
-                <Image
+                {/* <Image
                   className="rounded-full shadow-md white"
-                  src="/welcome3.jpg"
+                  src="/welcome3.jpg" 
                   alt="Next.js Logo"
                   width={190}
                   height={70}
                   priority
-                />
+                /> */}
               </div>
 
-              <h1 className="font-sacramento my-4 text-4xl md:text-8xl">Selvi & Diwa</h1>
-              <h1 className="mb-6">Rabu, 17 April 2024</h1>
+              <h1 className="font-sacramento my-4 text-4xl md:text-8xl">Bayu & Nadiya</h1>
+              <h1 className="mb-6">Minggu, 10 November 2024</h1>
 
               <h2> Dear {capitalizeEachWord(guestName)}</h2>
               <button

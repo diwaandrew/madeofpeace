@@ -7,7 +7,7 @@ const Countdown = () => {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const countdownDate = new Date('2024-04-17T00:00:00').getTime();
+    const countdownDate = new Date('2024-11-10T00:00:00').getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();

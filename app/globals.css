@@ -38,8 +38,9 @@ body {
     /* background-size: 400% 400%; */
     /* animation: aurora 15s infinite linear; */
     /* background: url('https://png.pngtree.com/background/20230203/original/pngtree-greenery-natural-background-watercolor-and-gold-leaves-for-wedding-or-engagement-picture-image_2025620.jpg');  */
-    background: url('/invitation.jpg');
-    background-size: cover;
+    //background: url('/invitation.jpg');
+    background: url('/bayu/bay3.jpg');
+    background-size: contain;
   }
 
   @keyframes aurora {
