@@ -71,7 +71,7 @@ const Main = ({ className }: any) => {
                     Nadiya Amalia Putri
                   </h1>
                   <p className="mt-3 mb-0">Putri</p>
-                  <p className="mb-0">Bapak Budi Waluyo & Ibu Laila Annahaar</p>
+                  <p className="mb-0">Bapak Budi Waloyo & Ibu Laila Annahaar</p>
                 </div>
               </div>
             </FadeInComponent>
@@ -160,13 +160,13 @@ const Main = ({ className }: any) => {
                 <h1 className="font-sacramento text-4xl">Akad</h1>
               </FadeInComponent>
               <FadeInComponent fadeDirection="left" delay={0.18}>  
-                <p className="font-bold text-sm">Pukul 08.00 WIB - 10.00</p>
+                <p className="font-bold text-sm">Pukul 08.00 WIB</p>
               </FadeInComponent>
               <FadeInComponent fadeDirection="down" delay={0.18}>
                 <h1 className="font-sacramento text-4xl pt-10">Resepsi</h1>
               </FadeInComponent>
               <FadeInComponent fadeDirection="left" delay={0.18}>
-                <p className="font-bold text-sm">Pukul 10.00 WIB - Selesai</p>
+                <p className="font-bold text-sm">Pukul 10.00 - 13.00 WIB</p>
               </FadeInComponent>
             </div>
 
