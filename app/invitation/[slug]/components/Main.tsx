@@ -166,7 +166,7 @@ const Main = ({ className }: any) => {
                 <h1 className="font-sacramento text-4xl pt-10">Resepsi</h1>
               </FadeInComponent>
               <FadeInComponent fadeDirection="left" delay={0.18}>
-                <p className="font-bold text-sm">Pukul 10.00 - 13.00 WIB</p>
+                <p className="font-bold text-sm">Pukul 10.00 - 12.30 WIB</p>
               </FadeInComponent>
             </div>
 
