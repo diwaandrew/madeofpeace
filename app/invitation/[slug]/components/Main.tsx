@@ -194,7 +194,7 @@ const Main = ({ className }: any) => {
         </div>
       </section>
 
-      <section className="w-full" id="ucapan">
+      {/* <section className="w-full" id="ucapan">
         <div className="flex flex-col items-center">
           <div className="w-full mx-8 border rounded-md shadow p-3">
             <FadeInComponent fadeDirection="down" delay={0.18}>
@@ -207,7 +207,7 @@ const Main = ({ className }: any) => {
             
           </div>
         </div>
-      </section>
+      </section> */}
       <Music/>
     </main>
   );
